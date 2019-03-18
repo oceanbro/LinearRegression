@@ -1,0 +1,11 @@
+import matplotlib.pyplot as plt
+fig = plt.figure(figsize = (6,6), dpi = 80)
+ax = fig.add_subplot(111)
+ax.set_xlabel("$x$")
+ax.set_xticks(range(10,31,5))
+ax.set_ylabel("$y$")
+ax.set_yticks(range(10,31,5))
+ax.scatter(data.x, data.y, color = "b", label = "$y = x + \epsilon$")
+plt.legend(shadow = True)
+pic = plt.show()
+pic
