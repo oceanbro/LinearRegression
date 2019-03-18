@@ -1,0 +1,11 @@
+from sklearn import linear_model
+features = ["x"]
+label = ["y"]
+train_dataset = data[:15]
+test_dataset = data[15:]
+model = linear_model.LinearRegression()
+model.fit(train_dataset[features],train_dataset[label])
+model.coef_
+print(model.coef_)
+model.intercept_
+print(model.intercept_)
